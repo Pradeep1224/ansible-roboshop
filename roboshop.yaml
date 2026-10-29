@@ -5,12 +5,12 @@
     instances: ["mongodb", "redis", "mysql", "rabbitmq" ]
     action: create
     domain_name: pradeepverse.online
-    image_id: ami-0055977a6e828a4f4
+    ami_id: ami-0055977a6e828a4f4
   tasks:
   - name: create ec2 instances
     amazon.aws.ec2_instance:
       name: "roboshop-{{item}}"
-      ami_id: "{{ image_id }}"
+      image_id: "{{ ami_id }}"
       instance_type: t3.micro
       security_groups:
       - "roboshop-common"
