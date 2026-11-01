@@ -36,7 +36,7 @@
       url: https://raw.githubusercontent.com/daws-92s/roboshop-documentation/refs/heads/main/artifacts/cart-"{{app_version}}".zip
       dest: /tmp/cart.zip
   - name: unzip
-    unarchieve: 
+    unarchive: 
       src: /tmp/cart.zip
       dest: /app
       remote_src: yes
@@ -55,4 +55,4 @@
     service:
       name: cart
       state: restarted
-      enbable: yes
+      enabled: yes
