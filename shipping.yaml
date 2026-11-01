@@ -53,7 +53,7 @@
       url: https://raw.githubusercontent.com/daws-92s/roboshop-documentation/refs/heads/main/artifacts/shipping-v4.zip
       dest: /tmp/shipping.zip
   - name: unzip
-    unarchieve: 
+    unarchive: 
       src: /tmp/shipping.zip
       dest: /app
       remote_src: yes
