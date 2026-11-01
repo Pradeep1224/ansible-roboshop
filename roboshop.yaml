@@ -17,7 +17,6 @@
       - "roboshop-common"
       - "roboshop-{{item}}"
       region: us-east-1
-
     loop: "{{instances}}"
     when: action == "create"
     register: ec2_output
@@ -30,7 +29,7 @@
   - name: create r53 record 
     amazon.aws.route53:
       state: present
-      zone: '{{domain_name}}'
+      zone: "{{domain_name}}"
       record: "{{item.item}}.{{domain_name}}"
       type: A 
       ttl: 1
