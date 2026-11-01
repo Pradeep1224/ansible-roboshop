@@ -7,7 +7,7 @@
   
   - name: install redis
     package:
-      name: redis-server
+      name: redis
       state: present
   - name: replace in the config allow remote connections.
     replace:
