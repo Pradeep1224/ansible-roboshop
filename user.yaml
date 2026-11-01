@@ -36,7 +36,7 @@
       url: https://raw.githubusercontent.com/daws-92s/roboshop-documentation/refs/heads/main/artifacts/user-v4.zip
       dest: /tmp/user.zip
   - name: unzip
-    unarchieve: 
+    unarchive: 
       src: /tmp/user.zip
       dest: /app
       remote_src: yes
