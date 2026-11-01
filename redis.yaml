@@ -7,8 +7,8 @@
   
   - name: install redis
     package:
-    name: redis-server
-    state: present
+      name: redis-server
+      state: present
   - name: replace in the config allow remote connections.
     replace:
       path: /etc/redis/redis.conf

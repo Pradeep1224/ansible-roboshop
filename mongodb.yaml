@@ -6,9 +6,9 @@
       copy: 
         src: mongo.repo
         dest: /etc/yum.repos.d/mongo.repo
-    - name: test the inventory group file variable
-      debug:
-        msg: "{{app_name}}"  
+    # - name: test the inventory group file variable
+    #   debug:
+    #     msg: "{{app_name}}"  
     - name: install mongodb server
       package:
         name: mongo-org
