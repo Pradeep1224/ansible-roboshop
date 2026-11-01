@@ -16,7 +16,7 @@
     service:
       name: rabbitmq-server
       state: started
-      enable: yes
+      enabled: yes
 
   - name: adding rabbitmq user and set password 
     community.rabbitmq.rabbitmq_user:
