@@ -2,6 +2,7 @@
   hosts: local
   connection: local
   vars:
+  #ansible-playbook roboshop.yaml -e "instances=['mongodb','etc']"
     instances: ["mongodb", "redis", "mysql", "rabbitmq" ]
     action: create
     domain_name: pradeepverse.online

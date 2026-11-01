@@ -1,0 +1,11 @@
+ansible_user: ec2-user
+ansible_password: DevOps321
+mongodb_host: mongodb.pradeepverse.online
+redis_host: redis.pradeepverse.online
+catalogue_host: catalogue.pradeepverse.online
+mysql_host: mysql.pradeepverse.online
+rabbitmq_host: rabbitmq.pradeepverse.online
+user_host: user.pradeepverse.online
+cart_host: cart.pradeepverse.online
+shipping_host: shipping.pradeepverse.online
+payment_host: payment.pradeepverse.online
