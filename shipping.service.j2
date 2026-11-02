@@ -5,7 +5,7 @@ After=network-online.target
 [Service]
 User=roboshop
 Environment=CART_ENDPOINT={{cart_host}}:8080
-Environment=DB_HOST=mysql_host
+Environment=DB_HOST={{mysql_host}}
 Environment=DB_USER={{shipping_user}}
 Environment=DB_PASSWORD={{shipping_password}}
 ExecStart=/bin/java -jar /app/shipping.jar
